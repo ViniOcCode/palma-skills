@@ -4,7 +4,7 @@ Use this reference when the operator requests connection, Palma tools are unavai
 
 ## Resolve the service URL
 
-Reuse a Palma MCP URL already configured in this harness, or the public HTTPS URL supplied by the operator or deployment owner. It ends in `/mcp`. If no URL has been supplied, ask for it before changing configuration. The skill's GitHub repository or download URL is not an MCP endpoint.
+The examples intentionally retain `<PALMA_MCP_PUBLIC_URL>`; this distribution has no default service URL. Use the exact public HTTPS MCP URL supplied in the operator's initial prompt in place of that placeholder when configuring the harness. It ends in `/mcp`. Preserve the placeholder in the distributed reference. If the prompt supplies no URL, reuse a confirmed Palma URL already configured in this harness or ask the operator for it before changing configuration. The skill's GitHub repository or download URL is not an MCP endpoint.
 
 Identify the current harness from available runtime context and configuration. Use its installed CLI help when commands differ from these examples. Preserve existing servers and settings. Use the tools or shell available to configure the client when the operator requests setup; if this harness cannot change its configuration, give the exact steps the operator must perform. OAuth consent and marketplace authentication belong to the account holder in the browser. Keep tokens, client secrets, and marketplace credentials out of chat and skill files.
 

@@ -26,11 +26,11 @@ O [CLI skills](https://github.com/vercel-labs/skills) também instala em outros 
 
 ## Conectar
 
-Abra uma nova sessão do agente, se necessário, e envie:
+Abra uma nova sessão do agente, se necessário. Substitua `[URL correta do MCP]` pela URL do serviço e envie:
 
-> Use a skill do Palma para conectar minha conta do Mercado Livre e confirmar que está pronta para uso.
+> Use a skill do Palma para conectar minha conta do Mercado Livre. A URL correta do MCP é [URL correta do MCP]. Use esse endereço no lugar de <PALMA_MCP_PUBLIC_URL> em references/setup.md ao configurar o harness. Depois da autorização, confirme que minha conta está pronta para uso.
 
-Informe a URL pública do MCP fornecida pelo responsável pelo Palma quando o agente pedir. A URL termina em `/mcp`; o endereço deste repositório não é a URL do serviço.
+A URL termina em `/mcp`; o endereço deste repositório não é a URL do serviço. Os exemplos da referência mantêm `<PALMA_MCP_PUBLIC_URL>`; o agente substitui esse valor pela URL informada no prompt ao configurar a conexão. Se você ainda não tiver a URL, obtenha-a com o responsável pelo serviço antes de conectar.
 
 A skill orienta o agente a configurar a conexão. Se ele não puder editar a configuração, fornecerá os passos para você executar. Conclua a autorização no navegador usando a conta titular do Mercado Livre. Depois, o agente verifica qual conta está conectada. Instalar a skill não configura o MCP nem concede acesso à sua conta.
 
